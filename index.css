@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  background: #222;
+  overflow: hidden;
+}
+
+.pane {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.pane:nth-child(1) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg);
+}
+
+.pane:nth-child(2) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg)
+}
+
+.pane:nth-child(3) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg)
+}
+
+.pane:nth-child(4) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg)
+}
+
+.pane:nth-child(5) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg)
+}
+
+.pane:nth-child(6) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg)
+}
+
+.pane:nth-child(7) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg)
+}
+
+.pane:nth-child(8) {
+  background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg)
+}
+
+.pane:not(.active):hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
